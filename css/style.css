@@ -24,9 +24,7 @@
 html {
   font-size: 16px;
 }
-botton{
-  outline: none;
-}
+
 
 /* ================= Desktop first  768 <= width < 992px ================= */
 .head {
@@ -106,6 +104,7 @@ botton{
   background-color: hsl(322, 100%, 66%);
   color: hsl(207, 100%, 98%);
   border: none;
+  outline: none;
   font-size: 1.1rem;
   word-spacing: 2px;
   font-family: "Open Sans", sans-serif;
