@@ -33,11 +33,13 @@ html {
   display: flex;
   flex-flow: column nowrap;
   background-color: var(--veryPaleBlue);
+  background-color: hsl(207, 100%, 98%);
 }
 .container {
   width: 769px;
   margin: 0 auto;
   overflow: hidden;
+  background-color: hsl(207, 100%, 98%);
 }
 .container header {
   width: 100%;
@@ -222,6 +224,7 @@ html {
   grid-row-gap: 70px;
   grid-column-gap: 20px;
   margin-top: 160px;
+  background-color: hsl(207, 100%, 98%);
 }
 
 .grid > div {
@@ -298,6 +301,7 @@ html {
   align-content: center;
   height: 40vh;
   margin-top: 150px;
+  background-color: hsl(207, 100%, 98%);
 }
 /* ====================== mobile ==========================*/
 @media (max-width: 600px) {
@@ -317,7 +321,7 @@ html {
 /* ================================================= */
 footer {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: hsl(192, 100%, 9%);
   margin-top: 200px;
   overflow: hidden;
@@ -330,6 +334,9 @@ footer > img {
   position: absolute;
   top: -13px;
   left: 0;
+}
+footer .container{
+   background-color: unset;
 }
 .container .contentFt {
   /* position: absolute;
@@ -349,7 +356,7 @@ footer > img {
 .contentFt .left,
 .contentFt .right {
   width: 48%;
-  height: 100vh;
+  height: 70vh;
 }
 .left,
 .right {
@@ -451,7 +458,7 @@ form input[type="submit"]:hover {
 /* ================ phone ==============  */
 @media (max-width: 600px) {
   footer {
-    height: 100vh;
+    /* height: 100vh; */
     overflow: hidden;
   }
   footer > img {
@@ -464,8 +471,8 @@ form input[type="submit"]:hover {
   }
   .container .contentFt {
     flex-flow: column nowrap;
-    margin-top: 40%;
-    height: 70%;
+    margin: 40% 0;
+    /* height: 70%; */
     justify-content: center;
   }
   .contentFt .left,
@@ -500,9 +507,16 @@ form input[type="submit"]:hover {
 }
 /* ================= tablets =========== */
 @media screen and (min-width: 600px) and (max-width:768px){
-  footer > img {
 
+  footer > img {
     top: 0px;
+  }
+  .contentFt .left,
+ .contentFt .right{
+    height: 50vh;
+  }
+  
+
 }
 /* =================== large ================ */
 @media (min-width: 1200px) {
